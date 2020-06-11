@@ -4,20 +4,30 @@
 }
 
 body {
-    background-color: #2edbc7;
+    background-color: #F0F0F0;
 }
 
 h1 {
     text-align: center;
-    margin: 50px 0;
+    margin-bottom: 40px;
     font-family: 'Play', sans-serif;
     font-weight: 700;
+    text-shadow:0px 1px 1px rgba(0,0,0,0.4);
+
+}
+
+.main {
+    background-color: #2edbc7;
+    width: 500px;
+    margin: 60px auto;
+    padding: 50px 30px 60px 30px;
+    box-shadow: 3px 3px 13px 2px #16B5A2;
+
 }
 
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
 }
 
 .grid {
@@ -26,8 +36,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-    border-top:	4px solid #E0E0E0;
-    border-left: 4px solid #E0E0E0;
+    border-top:	4px solid #D8D8D8;
+    border-left: 4px solid #D8D8D8;
     border-bottom: 3px solid #F0F0F0;
     border-right: 3px solid #F0F0F0;
 }
@@ -35,6 +45,10 @@ h1 {
 .grid div {
     height: 20px;
     width: 20px;
+}
+
+ .taken {
+    border: hidden;
 }
 
 .tetromino {
@@ -49,14 +63,25 @@ h1 {
 }
 
 .start-button {
-    font-family: 'Play', sans-serif;
     padding: 10px;
+    cursor: pointer;
+    background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+    background-color: #ffc477;
+    border: 1px solid #eeb44f;
     border-radius: 20px;
+    box-shadow:inset 0px 1px 0px 0px #fce2c1;
+    font-family: 'Play', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+	text-shadow:0px 1px 0px #cc9f52;
 }
 
 .score {
     margin: 30px;
     font-family: 'Play', sans-serif;
+    text-shadow:0px 1px 1px rgba(0,0,0,0.4);
+
 }
 
 .mini-grid {
@@ -65,8 +90,8 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-    border-top:	4px solid #E0E0E0;
-    border-left: 4px solid #E0E0E0;
+    border-top:	4px solid	#D8D8D8;
+    border-left: 4px solid	#D8D8D8;
     border-bottom: 3px solid #F0F0F0;
     border-right: 3px solid #F0F0F0;
 }
